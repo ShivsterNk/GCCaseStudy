@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Grand Central Get-Arounds!</title>
+		<link rel="stylesheet" href="gcstyle.css">
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="navdiv">
+				<div class="logo">Grand Central Getarounds!</div>
+					<ul class="nav-menu">
+						<li class="nav-item">
+							<a href="gcindex.html" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="gcabout.html" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="gcpurpose.html" class="nav-link">Purpose</a>
+						</li>
+						<li class="nav-item">
+							<a href="gcgallery.html" class="nav-link">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a href="location.html" class="nav-link">Location</a>
+						</li>
+					</ul>
+					<div class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+			</div>
+		</nav>
+		
+		<header style="background-image: url('./Pictures/brypkbgd.jpg'); background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center;">
+			<h1 style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-size: 2rem;">To get from Grand Central - LIRR Platform, to Bryant Park</h1>
+		</header>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#directions">Directions</a>
+			<a href="#additional-info">Additional Info</a>
+			<a href="#minutes">Time Taken</a>
+			<a href="#map">Map with Directions</a>
+			<a href="#visual-guide">Visual</a>
+		</div>
+		
+		<main>
+		<button onclick="topFunction()" style="display:none;" id="backTop" title="Go to Top">Top</button>
+			<section class="menu-Container">
+				<div id="menuButton" class="menuButton" onclick="openNav()">
+					<span>Page Menu</span>
+				</div>
+			</section>
+			
+			<div id="fullscreen-container" class="fullscreen-container">
+				<button id="exit-button" class="exit-button">X</button>
+				<img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+			</div>
+
+			<section id="directions">
+				<h2>By Walking</h2>
+				<ol id="directions-text">
+					<li>Exit from the platform your LIRR train arrives on and head to the mezzanine. Then, take the <span style="color:#2E8B57; font-size:18px; font-weight:bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">45th Street</span> escalators to the concourse.</li>
+					<p><img src="./GCGallery/conc4.jpg" alt="The concourse path to 43rd Street, Subway, Metro North" class="about-pic"></p>
+					<li>Once there, walk to the <strong>44th Street</strong> area. Then, turn right.</li>
+					<li>Here, you will find signs to 2 elevators. Take the elevator that says <strong>Elevator to 44th St</strong> to the right.</li>
+					<p><img src="./GCGallery/ent2.jpg" alt="The area where you grab the elevator up" class="about-pic"></p>
+					<li>Once on street level, turn right and Walk <strong>West</strong> along <strong>44th Street</strong> to 5th Avenue. </li>
+					<li>Then make a <strong>LEFT</strong> at 44th Street and 5th Avenue, and walk <strong>SOUTH</strong> along 5th Avenue until you reach <strong>42nd Street</strong>.</li>
+					<li>Once you reach <strong>42nd Street and 5th Avenue</strong>, walk along 42nd Street, where you will see <strong>Bryant Park</strong>.</li>
+				</ol>
+			</section>
+			
+			<section id="additional-info">
+				<h2>Some Tips and Tricks</h2>
+				<ol id="directions-text">
+					<li>At Grand Central, there is a set of <a href="./GCGallery/gcimage3.jpg" id="image-link" target="_blank">elevators</a>that will take you up from the mezzanine to the concourse.</li>
+					<li>It's located between the <strong>46th Street and 47th Street</strong> escalator banks on the mezzanine, so look for signs.</li>
+				</ol>
+			</section>
+			
+			<section id="minutes">
+				<h2>Expected Time Taken - Minutes</h2>
+				<ol id="directions-text">
+					<li>To get onto street level from the LIRR tracks, it will take you roughly <strong>6-7 minutes</strong> depending on your speed and method you chose.</li>
+					<li>To get from the street level (near 44th and Madison) to Bryant Park, it will take roughly <strong>8 minutes</strong>, depending on your speed.</li>
+				</ol>
+			</section>
+			
+			<section id="map">
+     			 <h2>Map Overview</h2>
+     			 <p>Below is a map showing the route from Grand Central (when you get onto street level) to Bryant Park.</p>
+     			 <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3022.359116915532!2d-73.98288707408535!3d40.75412557138737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x89c25901fba79897%3A0x882707ccd529c571!2s49!3m2!1d40.7539241!2d-73.97767139999999!4m5!1s0x89c259aae7a0b1bd%3A0xb49cafb82537f1a7!2sBryant%20Park%2C%20New%20York%2C%20NY!3m2!1d40.7535367!2d-73.9829529!5e0!3m2!1sen!2sus!4v1740756057388!5m2!1sen!2sus" id="mapvis" width="600" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br />
+     			 <a href="https://maps.app.goo.gl/aYa6VZuwtec6Ny9B7" target="_blank" rel="noopener noreferrer">View A Google Maps Route from Grand Central (44th St and Madison Avenue) to Bryant Park</a>
+       		</section>					
+       		
+       		<section id="visual-guide">
+				<h2>Bryant Park</h2>
+				<p><img src="./Pictures/bryantpark.jpg" alt="Winter At Bryant Park" class="about-pic"></p>
+			</section>
+
+		</main>
+	
+		<footer>
+			<div class="footerContainer">
+				<div class="footerNav">
+					<ul>
+						<li><a href="gcindex.html">Home</a></li>
+						<li><a href="gcabout.html">About</a></li>
+						<li><a href="gcpurpose.html">Purpose</a></li>
+						<li><a href="gcgallery.html">Gallery</a></li>
+						<li><a href="location.html">Location</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="footerBottom">
+				<p>&copy; 2025; Made By <span class="maker">Sivakumar Nirmalakumar</span></p>
+			</div>
+		</footer>
+		
+		<script src="gcscripts.js"></script>
+		
+	</body>
+</html>

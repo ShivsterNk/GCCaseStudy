@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Grand Central Get-Arounds!</title>
+		<link rel="stylesheet" href="gcstyle.css">
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="navdiv">
+				<div class="logo">Grand Central Getarounds!</a></div>
+					<ul class="nav-menu">
+						<li class="nav-item">
+							<a href="gcindex.html" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="gcabout.html" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="gcpurpose.html" class="nav-link">Purpose</a>
+						</li>
+						<li class="nav-item">
+							<a href="gcgallery.html" class="nav-link">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a href="location.html" class="nav-link">Location</a>
+						</li>
+					</ul>
+					<div class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+			</div>
+		</nav>
+		<header style="background-image: url('./Pictures/cpbgd.jpg'); background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center;">
+			<h1 style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-size: 2rem;">To get to Central Park - Bethseda Terrace</h1>
+		</header>
+		
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#directions">Directions</a>
+			<a href="#visual-bus">Visual Guide</a>
+			<a href="#additional-info">Additional Info</a>
+			<a href="#minutes">Time Taken</a>
+			<a href="#map">Map with Directions</a>
+			<a href="#location">Visual</a>
+			<a href="#bonus">Bonus Places</a>
+		</div>
+		
+		<main>
+		<button onclick="topFunction()" style="display:none;" id="backTop" title="Go to Top">Top</button>
+			<section class="menu-Container">
+				<div id="menuButton" class="menuButton" onclick="openNav()">
+					<span>Page Menu</span>
+				</div>
+			</section>
+			
+			<div id="fullscreen-container" class="fullscreen-container">
+				<button id="exit-button" class="exit-button">X</button>
+				<img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+			</div>
+		
+			<div class="blink-class">NOTE: The fastest way to get there is by bus. Even if its a beautiful day outside, the bus will save you time and energy.</div>
+			
+			<section id="directions">
+			<p>There are two different ways to get out of Grand Central, and two different locations to board any of the buses from. </p>
+			<p>Regardless of which way you chose, make sure to take the bus and get off at Madison Avenue and 72nd Street. </p>
+			
+			<h2>Click a choice to show how to get the bus from the LIRR platforms. </h2>
+			<h3>Please view both, as one may better suit your needs.</h3>
+			<div class="button-container">
+			<button class="choice" onclick="myFunction('myDIV1')">Click to See Option 1</button>
+				<div id="myDIV1" style="display: none;">
+				<h2>To Get The Bus - OPTION 1</h2>
+				<ol>
+					<p>Exit from the platform your LIRR train arrives on to the mezzanine. Then, head up the <span style="color:purple; font-size:18px; font-weight:bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">47th Street</span> escalators to the concourse.</p>
+					<p>Then, exit onto street level where you'll land at 47th Street and Madison Avenue.</p>
+					<p>Walk southbound to 46th Street and Madison Avenue</p>
+					<p>There are 2 places you can board the bus: </p>
+					<h3>Near East 46th Street and Madison - Northbound M1 or M2 Bus</h3>
+					<h3>Near East 45th Street and Madison - Northbound M3 or M4 Bus</h3>
+				</ol>
+				</div>
+			
+			
+			<button class="choice" onclick="myFunction('myDIV2')">Click to See Option 2</button>
+				<div id="myDIV2" style="display: none;">
+				<h2>To Get The Bus - OPTION 2</h2>
+				<ol>
+					<p>Exit from the platform your LIRR train arrives on to the mezzanine. Then, head up the <span style="color:#008080; font-size:18px; font-weight:bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">48th Street</span> escalators to the concourse.</p>
+					<p>Then, take the elevator to street level, where you'll exit near the corner of 48th Street and Madison Avenue.</p>
+					<p>Walk northbound to 49th Street and Madison Avenue</p>
+					<p>There are 2 places you can board the bus: </p>
+					<h3>Near East 49th Street and Madison - Northbound M3 or M4 Bus</h3>
+					<h3>Near East 50th Street and Madison - Northbound M1 or M2 Bus</h3>
+				</ol>		
+				</div>
+			</div>
+			</section>
+			
+			<section id="visual-bus">
+				<h2>Here's the buses to look out for + Directions:</h2>
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+						<img src="./Pictures/m1bus.jpg" alt="M1 Bus" style="width: 100%">
+						<div class="text">Board an M1 Bus going to Harlem-147th Street</div>
+					</div>
+					
+					<div class="mySlides fade">
+						<img src="./Pictures/m2bus.jpg" alt="M2 Bus" style="width: 100%">
+						<div class="text">Board an M2 Bus going to Washington Heights</div>
+					</div>
+					
+					<div class="mySlides fade">
+						<img src="./Pictures/m3bus.jpg" alt="M3 Bus" style="width: 100%">
+						<div class="text">Board an M3 Bus going to Fort George</div>
+					</div>
+					
+					<div class="mySlides fade">
+						<img src="./Pictures/m4bus.jpg" alt="M4 Bus" style="width: 100%">
+						<div class="text">Board an M4 Bus going to the Cloisters</div>
+					</div>
+					<!-- Next/Previous buttons -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>	
+				<br>
+			</section>
+			
+			<section id="directions">
+				<ol>
+				<p>Regardless of which stop you board at, or which bus you take...</p>
+				<p style="color: red; font-weight: bold;">You MUST get off at East 72nd Street and Madison Avenue!!</p>
+				<p>After getting off, walk towards 72nd Street and then turn to walk towards <span style="font-weight: bold">5th Avenue.<p>
+				<p>Then walk straight into Central Park via the Terrace Avenue walkway entrance. </p>
+				<p>Continue to walk via Terrace Avenue, where you will reach the Bethseda Terrace!</p>
+				</ol>
+			</section>
+			
+			<section id="additional-info">
+				<h2>Some Tips and Tricks</h2>
+				<ol id="directions-text">
+					<li>At Grand Central, there is a set of <a href="./GCGallery/gcimage3.jpg" id="image-link" target="_blank">elevators</a>that will take you up from the mezzanine to the concourse.</li>
+					<li>It's located between the <strong>46th Street and 47th Street</strong> escalator banks on the mezzanine, so look for signs.</li>
+					<li>There is another elevator available on the <strong>Concourse</strong> level, that will take you to the Street level.</li> 
+					<p><img src="./GCGallery/ent6.jpg" alt="The stairs and elevator exit at 47th Street" class="about-pic"></p>
+					<li>This elevator is located in a small corner past a few ticket machines, facing away from the <strong>47th Street</strong> escalator bank.</li>
+					<li>Note: During all daytimes, the M2 Bus operates Express. The only stop you can take this bus from is at 50th Street and Madison Avenue.</li>
+					<li>Note: Some M4 Buses operate Express during weekday rush hours. The only stop you can take this bus from is at 49th Street and Madison Avenue.</li>
+				</ol>
+			</section>
+			
+			<section id="minutes">
+				<h2>Expected Time Taken - Minutes</h2>
+				<ol id="directions-text">
+					<li>To get onto street level from the LIRR tracks, it will take you roughly <strong>5-7 minutes</strong> depending on your speed.</li>
+					<li>To get the bus and ride from either 45-46 Streets or 49-50th Streets, to Madison and 72nd Street, should take <strong>12-17 minutes</strong></li>
+					<li>This depends on which bus stop you board from, which bus comes your way, and traffic.</li>
+					<li>To get from The 72nd Street Bus Stop to Bethseda Terrace via 72nd Street and Terrace Avenue, should take <strong>11 minutes</strong>, depending on your speed.</li>
+				</ol>
+			</section>
+			
+			<section id="map">
+     			 <h2>Map Overview</h2>
+     			 <p>Below is a map showing the route from Grand Central (when you get onto street level) to Times Square.</p>
+     			 <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d12087.502728673096!2d-73.98127228733813!3d40.76475894216782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x89c2599c026271ef%3A0xe0b1ca45d01e4d2f!2sGrand%20Central%20-%20LIRR%20Concourse%2C%20383%20Madison%20Ave%2C%20New%20York%2C%20NY%2010017!3m2!1d40.7554702!2d-73.9766645!4m5!1s0x89c25892a6168611%3A0x9d94703beba53b51!2sBethesda%20Terrace%2C%20New%20York%2C%20NY%2010024!3m2!1d40.773952799999996!2d-73.9709657!5e0!3m2!1sen!2sus!4v1740759172243!5m2!1sen!2sus" id="mapvis" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br />
+     			 
+     			 <a href="https://maps.app.goo.gl/CWxDTse3d1yjA9bL9" target="_blank" rel="noopener noreferrer">View A Google Maps Route from Grand Central (47th St and Madison Avenue) to Central Park - Bethseda Terrace</a> 
+
+    		</section>
+    		
+    		<section id="location">
+				<h2>Central Park - Bethseda Terrace</h2>
+				<p><img src="./Pictures/centralparkspring.jpg" alt="Central Park around a Springy Bethseda Terrace" class="about-pic"></p>
+			</section>
+			
+			<section id="bonus">
+    			<h2>BONUS: Around Central Park, there's a few notable places around the area you can check out!</h2>
+    					<p><img src="./Pictures/rivercp.jpg" alt="Conservatory Pond at Central Park" class="about-pic" style="max-width:600px;"></p>
+    					<p>The Conservatory Pond at Central Park</p>
+    					<p><img src="./Pictures/metart.jpg" alt="The MET" class="about-pic" style="max-width:600px;"></p>
+    					<p>The Metropolitan Museum of Art</p>
+       					<p><img src="./Pictures/gugmuseum.jpg" alt="Gug Museum" class="about-pic" style="max-width:600px;"></p>
+       					<p>The Guggenheim Museum</p>
+			</section>
+
+		</main>
+		
+		<footer>
+			<div class="footerContainer">
+				<div class="footerNav">
+					<ul>
+						<li><a href="gcindex.html">Home</a></li>
+						<li><a href="gcabout.html">About</a></li>
+						<li><a href="gcpurpose.html">Purpose</a></li>
+						<li><a href="gcgallery.html">Gallery</a></li>
+						<li><a href="location.html">Location</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="footerBottom">
+				<p>&copy; 2025; Made By <span class="maker">Sivakumar Nirmalakumar</span></p>
+			</div>
+		</footer>
+		
+		<script src="gcscripts.js"></script>
+	
+	</body>
+</html>

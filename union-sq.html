@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Grand Central Get-Arounds!</title>
+		<link rel="stylesheet" href="gcstyle.css">
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="navdiv">
+				<div class="logo">Grand Central Getarounds!</div>
+					<ul class="nav-menu">
+						<li class="nav-item">
+							<a href="gcindex.html" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="gcabout.html" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="gcpurpose.html" class="nav-link">Purpose</a>
+						</li>
+						<li class="nav-item">
+							<a href="gcgallery.html" class="nav-link">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a href="location.html" class="nav-link">Location</a>
+						</li>
+					</ul>
+					<div class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+
+			</div>
+		</nav>
+		
+		<header style="background-image: url('./Pictures/usqbgd.jpg'); background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center;">
+			<h1 style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-size: 2rem;">To get to Union Square from Grand Central LIRR</h1>
+		</header>
+
+		
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#directions">Directions</a>
+			<a href="#additional-info">Additional Info</a>
+			<a href="#subway-info">Subway Tips</a>
+			<a href="#minutes">Time Taken</a>
+			<a href="#map">Map with Directions</a>
+			<a href="#visual-guide">Visual</a>
+		</div>
+		
+		<main>
+		<button onclick="topFunction()" style="display:none;" id="backTop" title="Go to Top">Top</button>
+			<section class="menu-Container">
+				<div id="menuButton" class="menuButton" onclick="openNav()">
+					<span>Page Menu</span>
+				</div>
+			</section>
+			
+			<div id="fullscreen-container" class="fullscreen-container">
+				<button id="exit-button" class="exit-button">X</button>
+				<img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+			</div>
+
+			<section id="directions">
+				<h2>To get to Union Square, the subway is the fastest choice. There’s two different options, both having their advantages and drawbacks.</h2>
+				<div id="directions-text">
+					<p>Exit from the LIRR Platform your train arrives on. </p>
+					<p>Head to the mezzanine, then walk to and take the 45th Street escalator bank up to the concourse. </p>
+					<p>Elevator: Take the elevator to the mezzanine. Then, take the elevator located between the 46th and 47th Street areas, up to the concourse. </p>
+					<p><img src="./GCGallery/conc4.jpg" alt="The concourse path to 43rd Street, Subway, Metro North" class="about-pic"></p>
+					<p>Make your way WEST towards 43rd Street on the concourse, following signs for the subway. </p> 
+					<p><img src="./GCGallery/conc5.jpg" alt="The pathway to 43rd Street" class="about-pic"></p>
+					<p>You have two different ways to grab the subway. Pick and take whatever suits your needs: </p><br/>
+				</div>
+				<button class="accordion"><span style="font-weight:bold;">OPTION 1: Via Lexington Avenue (Faster, but not ADA Friendly).</span></button>
+				<div class="panel">
+					<button class="accordion">Choice 1 (Via One Vanderbilt)</button>
+						<div class="panel">
+							<p>Look for the entrance saying One Vanderbilt, Subway. These have clear glass doors. </p>
+							<p><img src="./GCGallery/conc7.jpg" alt="The entrance to One Vanderbilt" class="about-pic"></p>
+							<p>Go through the doors, and go up the stairs, escalator or elevator (floor -2). Then walk straight to the turnstyle area. Pay and enter the subway! </p>
+							<p><img src="./GCGallery/ent13.jpg" alt="The distant entrance to the Subway at floor -2 from the Elevator area" class="about-pic"></p>
+							<p>From the turnstyle entrance, make a left, walk through the passageway, following signs for the 4/5/6 trains. </p>
+						</div>
+						
+						<button class="accordion">Choice 2 (Via The Main Concourse):</button>
+						<div class="panel">
+							<p>Look for the entrance saying Main Concourse, Dining Hall, Subway. These have blue doors, located on the left side. </p>
+							<p><img src="./GCGallery/conc6.jpg" alt="The entrance to Dining Hall, Metro North" class="about-pic"></p>
+							<p>Go through the doors, take the escalator up to the dining hall. Once there, walk and take the ramp towards the Oyster Bay restaurant. </p>
+							<p>At the intersection, make a left. Walk straight up towards the Lexington Avenue-42nd Street passageway. Make a right, then follow the signs towards the subway. </p>
+							<p>Get to the subway entrance, head for the turnstyles, pay and enter the subway! </p>
+						</div>
+						
+						<br />
+						<p>Once you arrive, head towards the Downtown platforms for the <img src="./Logos/4-line.png" alt="logo" class="inline-logo"><img src="./Logos/5-line.png" alt="logo" class="inline-logo">and<img src="./Logos/6-line.png" alt="logo" class="inline-logo">trains. </p>
+						<p>Board a Brooklyn-bound <img src="./Logos/4-line.png" alt="logo" class="inline-logo">or<img src="./Logos/5-line.png" alt="logo" class="inline-logo">express train, take either train one stop to 14th Street Union Square.</p>
+						<p>Get off the train and exit.</p>
+					</div>
+					
+					<button class="accordion"><span style="font-weight:bold;">OPTION 2: Via the Shuttle and Broadway Line (ADA-friendly).</span><img src="./Logos/wheelchair.png" alt="logo" class="inline-logo"></button>
+					<div class="panel">
+						<p>Head towards One Vanderbilt (glass doors), and make your way up by the escalator or elevator. Then walk straight to the turnstyle area. Pay, and enter the subway!</p>
+						
+						<p>Once inside, find the platform for the<img src="./Logos/s-line.png" alt="logo" class="inline-logo">Shuttle train. Board the train, take it to Times Square-42nd Street.</p>
+						<p>When you get off, follow the signs for the Broadway Line (<img src="./Logos/n-line.png" alt="logo" class="inline-logo"><img src="./Logos/q-line.png" alt="logo" class="inline-logo"><img src="./Logos/r-line.png" alt="logo" class="inline-logo"><img src="./Logos/w-line.png" alt="logo" class="inline-logo">) trains, which is located near the shuttle platform.</p>
+						<p>Via the ramps, elevators, and/or stairs, go to the DOWNTOWN platform, get on any train, and take it to 14th Street-Union Square. </p> 
+						<p>Get off the train at 14th Street and exit.</p>
+					</div>
+			</section>
+			
+			<section id="additional-info">
+				<h2>Some Tips and Tricks</h2>
+				<div id="directions-text">
+					<p>*Before you board your LIRR train to Grand Central, board towards the front, which will bring you closest to the subway.</p>
+					<p>**If your one with ADA-needs, board towards the center of the train. This is where the elevators are located at Grand Central, giving you the shortest travel time.</p>
+					<p>At Grand Central, there is a set of <a href="./GCGallery/gcimage3.jpg" id="image-link" target="_blank">elevators </a>that will take you up from the mezzanine to the concourse.</li>
+					<p>It's located between the <strong>46th Street and 47th Street</strong> escalator banks on the mezzanine, so look for signs.</p>
+					<p>The ADA-Friendly, faster way to access Grand Central subway from the LIRR Concourse, is by using the One Vanderbilt entrance. Shown Below:</p>
+					<p><img src="./GCGallery/conc7.jpg" alt="The entrance to One Vanderbilt" class="about-pic"></p>				
+				</div>
+			</section>
+			
+			<section id="subway-info">
+				<h2>Subway Tips</h2>
+				<div id="directions-text">
+					<p>A Subway ride costs <strong>2.90</strong>. Pay using a MetroCard, or contactless payment(OMNY Card, Credit/Debit, or your Phone). </p>
+					<p><img src="./GCGallery/ent14.jpg" alt="The turnstyles to pay and enter the Subway" class="about-pic"></p>
+					<p>If you need to buy a MetroCard or OMNY Card, machines are located around the turnstyle area.</p>
+					<p>If you take <strong>Option 2</strong>, board the<img src="./Logos/s-line.png" alt="logo" class="inline-logo">Shuttle train towards the front, ensuring you the quickest exit.</p>
+					<p><span style="color:red; font-weight:bold; font-size:1em;">BE AWARE</span>: At Times Square on the<img src="./Logos/s-line.png" alt="logo" class="inline-logo">Shuttle train, there is a gap between the train and platform. Be careful when exiting or entering the train.</p>
+					<p>From the One Vanderbilt entrance near the<img src="./Logos/s-line.png" alt="logo" class="inline-logo">Shuttle train, you can reach the<img src="./Logos/4-line.png" alt="logo" class="inline-logo">or<img src="./Logos/5-line.png" alt="logo" class="inline-logo">trains, by walking the passageway in <strong>3-5 minutes.</strong></p>
+				</div>
+			</section>
+			
+			<section id="minutes">
+				<h2>Expected Time Taken - Minutes</h2>
+				<div id="directions-text">
+					<p>To get to the <strong>43rd Street Concourse</strong> from the LIRR tracks, it will take you roughly <strong>5-7 minutes</strong> depending on your speed, where you get off, and how you get there.</p>
+					<p>To go by <strong>One Vanderbilt</strong> from the 43rd Street hall to the turnstyle area, takes <strong>3-5 minutes</strong>, depending on your speed.</p>
+					<p>To go by <strong>Dining Concourse</strong> and 42nd Street-Lex Avenue passageway from the 43rd Street hall to the turnstyles, takes 6-8 minutes.</p>
+					<p>Using <strong>Option 1</strong> via the<img src="./Logos/4-line.png" alt="logo" class="inline-logo">and<img src="./Logos/5-line.png" alt="logo" class="inline-logo">trains from Grand Central to 14th Street, will take roughly <strong>10 minutes</strong>.</p>
+					<p>Using <strong>Option 2</strong> via the<img src="./Logos/s-line.png" alt="logo" class="inline-logo">Shuttle and<img src="./Logos/n-line.png" alt="logo" class="inline-logo">or<img src="./Logos/q-line.png" alt="logo" class="inline-logo">trains from Grand Central to 14th Street, will take roughly <strong>15-18 minutes</strong>.</p>
+					<p>NOTE: Option 2 is ADA-Friendly, as the<img src="./Logos/4-line.png" alt="logo" class="inline-logo"><img src="./Logos/5-line.png" alt="logo" class="inline-logo"><img src="./Logos/6-line.png" alt="logo" class="inline-logo">platform at 14th Street does <strong style="color:red">NOT</strong> have elevators.</p>
+			</section>
+			
+			<section id="map">
+     			 <h2>Map Overview</h2>
+     			 <p>Below is a map showing the route from Grand Central - LIRR to Union Square.</p>
+     			 <p>Option 1 is the highlighted route, but Option 2 is visible as well.</p>
+     			 <b>One Vanderbilt is shown as this is where you can choose which train to take from Grand Central.</b><br />
+     			 <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d12091.063795030588!2d-73.99400718674075!3d40.74517534221459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x89c2590199a4c12d%3A0x35c4d69dd805cc5e!2sOne%20Vanderbilt%2C%20Vanderbilt%20Avenue%2C%20New%20York%2C%20NY!3m2!1d40.752953999999995!2d-73.978528!4m5!1s0x89c2594556f693cd%3A0x9a57bfaad2ff79fb!2s14%20St.%20-%20Union%20Square%20Subway%20Station%2C%20One%20Union%20Square%20South%2C%20Union%20Square%20West%2C%20New%20York%2C%20NY!3m2!1d40.7344535!2d-73.9903361!5e0!3m2!1sen!2sus!4v1740767306405!5m2!1sen!2sus" id="mapvis" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br /> 
+     			 <a href="https://maps.app.goo.gl/54JX1P1JDDsAE9UA7" target="_blank" rel="noopener noreferrer">View A Google Maps Route from Grand Central - LIRR to Union Square</a>
+     			 
+        	</section>
+        	
+        	<section id="visual-guide">
+				<h2>Union Square</h2>
+				<p><img src="./Pictures/unionsquare.jpg" alt="The grand spectacle of Grand Central Terminal" class="about-pic"></p>
+			</section>
+
+		</main>
+		
+		<footer>
+			<div class="footerContainer">
+				<div class="footerNav">
+					<ul>
+						<li><a href="gcindex.html">Home</a></li>
+						<li><a href="gcabout.html">About</a></li>
+						<li><a href="gcpurpose.html">Purpose</a></li>
+						<li><a href="gcgallery.html">Gallery</a></li>
+						<li><a href="location.html">Location</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="footerBottom">
+				<p>&copy; 2025; Made By <span class="maker">Sivakumar Nirmalakumar</span></p>
+			</div>
+		</footer>
+		
+		<script src="gcscripts.js"></script>
+		    
+	</body>
+</html>

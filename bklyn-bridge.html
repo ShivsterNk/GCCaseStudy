@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Grand Central Get-Arounds!</title>
+		<link rel="stylesheet" href="gcstyle.css">
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="navdiv">
+				<div class="logo">Grand Central Getarounds!</div>
+					<ul class="nav-menu">
+						<li class="nav-item">
+							<a href="gcindex.html" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="gcabout.html" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="gcpurpose.html" class="nav-link">Purpose</a>
+						</li>
+						<li class="nav-item">
+							<a href="gcgallery.html" class="nav-link">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a href="location.html" class="nav-link">Location</a>
+						</li>
+					</ul>
+					<div class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+
+			</div>
+		</nav>
+		
+		<header style="background-image: url('./Pictures/bklynbdge.jpg'); background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center;">
+			<h1 style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-size: 2rem;">To get to Brooklyn Bridge from Grand Central LIRR</h1>
+		</header>
+
+		
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#directions">Directions</a>
+			<a href="#additional-info">Additional Info</a>
+			<a href="#subway-info">Subway Tips</a>
+			<a href="#minutes">Time Taken</a>
+			<a href="#map">Map with Directions</a>
+			<a href="#visual-guide">Visual</a>
+			<a href="#bonus">Bonus Places</a> 
+		</div>
+		
+		<main>
+		<button onclick="topFunction()" style="display:none;" id="backTop" title="Go to Top">Top</button>
+			<section class="menu-Container">
+				<div id="menuButton" class="menuButton" onclick="openNav()">
+					<span>Page Menu</span>
+				</div>
+			</section>
+			
+			<div id="fullscreen-container" class="fullscreen-container">
+				<button id="exit-button" class="exit-button">X</button>
+				<img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+			</div>
+
+			<section id="directions">
+				<h2>To get to Brooklyn Bridge by subway. This way is entirely ADA Friendly.<img src="./Logos/wheelchair.png" alt="logo" class="inline-logo"></h2>
+				<div id="directions-text">
+					<p>Exit from the LIRR Platform your train arrives on. </p>
+					<p>Head to the mezzanine, then walk to and take the 45th Street escalator bank up to the concourse. </p>
+					<p>Elevator: Take the elevator to the mezzanine. Then, take the elevator located between the 46th and 47th Street areas, up to the concourse. </p>
+					<p><img src="./GCGallery/conc4.jpg" alt="The concourse path to 43rd Street, Subway, Metro North" class="about-pic"></p>
+					<p>Make your way WEST towards 43rd Street on the concourse, following signs for the subway. </p> 
+					<p><img src="./GCGallery/conc5.jpg" alt="The pathway to 43rd Street" class="about-pic"></p>
+					<p>The fastest way to access the subway is via One Vanderbilt: </p><br/>
+					<p>Look for the entrance saying One Vanderbilt, Subway. These have clear glass doors. </p>
+					<p>Go through the doors, and go up the stairs, escalator or elevator (floor -2). Then walk straight to the turnstyle area. Pay and enter the subway! </p>
+					<p><img src="./GCGallery/ent13.jpg" alt="The distant entrance to the Subway at floor -2 from the Elevator area" class="about-pic"></p>
+					<p>From the turnstyle entrance, make a left, walk through the passageway, following signs for the <img src="./Logos/4-line.png" alt="logo" class="inline-logo"><img src="./Logos/5-line.png" alt="logo" class="inline-logo"><img src="./Logos/6-line.png" alt="logo" class="inline-logo"> trains. </p>
+					<p>Once you arrive, head towards the Downtown platforms for the <img src="./Logos/4-line.png" alt="logo" class="inline-logo"><img src="./Logos/5-line.png" alt="logo" class="inline-logo"><img src="./Logos/6-line.png" alt="logo" class="inline-logo">trains. </p>
+					<p>Board a Downtown <img src="./Logos/4-line.png" alt="logo" class="inline-logo">or<img src="./Logos/5-line.png" alt="logo" class="inline-logo">express train, take either train two stops to Brooklyn Bridge City Hall.</p>
+					<p>Get off the train and exit. Walk towards Centre Street, and stay until you reach the Brooklyn Bridge Promanade.</p>
+					<p>Cross the street, and walk onto the wooden pedestrian Promenade of the busy, touristy, iconic bridge.</p>
+					<p>Whether you walk to Brooklyn, or loop back to Manhattan, enjoy the breathtaking views of Manhattan and Brooklyn!</p> 
+				</div>
+					
+			</section>
+			
+			<section id="additional-info">
+				<h2>Some Tips and Tricks</h2>
+				<div id="directions-text">
+					<p>*Before you board your LIRR train to Grand Central, board towards the front, which will bring you closest to the subway.</p>
+					<p>**If your one with ADA-needs, board towards the center of the train. This is where the elevators are located at Grand Central, giving you the shortest travel time.</p>
+					<p>At Grand Central, there is a set of <a href="./GCGallery/gcimage3.jpg" id="image-link" target="_blank">elevators </a>that will take you up from the mezzanine to the concourse.</li>
+					<p>It's located between the <strong>46th Street and 47th Street</strong> escalator banks on the mezzanine, so look for signs.</p>
+					<p>The ADA-Friendly, faster way to access Grand Central subway from the LIRR Concourse, is by using the One Vanderbilt entrance. Shown Below:</p>
+					<p><img src="./GCGallery/conc7.jpg" alt="The entrance to One Vanderbilt" class="about-pic"></p>				
+				</div>
+			</section>
+			
+			<section id="subway-info">
+				<h2>Subway Tips</h2>
+				<div id="directions-text">
+					<p>A Subway ride costs <strong>2.90</strong>. Pay using a MetroCard, or contactless payment(OMNY Card, Credit/Debit, or your Phone). </p>
+					<p><img src="./GCGallery/ent14.jpg" alt="The turnstyles to pay and enter the Subway" class="about-pic"></p>
+					<p>If you need to buy a MetroCard or OMNY Card, machines are located around the turnstyle area.</p>
+					<p>From the One Vanderbilt entrance near the<img src="./Logos/s-line.png" alt="logo" class="inline-logo">Shuttle train, you can reach the<img src="./Logos/4-line.png" alt="logo" class="inline-logo">or<img src="./Logos/5-line.png" alt="logo" class="inline-logo">trains, by walking the passageway in <strong>3-5 minutes.</strong></p>
+				</div>
+			</section>
+			
+			<section id="minutes">
+				<h2>Expected Time Taken - Minutes</h2>
+				<div id="directions-text">
+					<p>To get to the <strong>43rd Street Concourse</strong> from the LIRR tracks, it will take you roughly <strong>5-7 minutes</strong> depending on your speed, where you get off, and how you get there.</p>
+					<p>To go by <strong>One Vanderbilt</strong> from the 43rd Street hall to the turnstyle area, takes <strong>3-5 minutes</strong>, depending on your speed.</p>
+					<p>To take the<img src="./Logos/4-line.png" alt="logo" class="inline-logo">and<img src="./Logos/5-line.png" alt="logo" class="inline-logo">trains from Grand Central to Brooklyn Bridge, will take roughly <strong>15 minutes</strong>.</p>
+					<p>To exit and walk onto the bridge, takes 5 minutes, depending on your speed.</p>
+			</section>
+			
+			<section id="map">
+     			 <h2>Map Overview</h2>
+     			 <p>Below is a map showing the route from Grand Central - LIRR to Brooklyn Bridge.</p>
+     			 <b>One Vanderbilt is shown as this is where you take the subway inside Grand Central.</b><br />
+     			 <p style="font-weight: bold; font-size: 1.25em;">Although Maps may show different routes, the 4/5 trains are the easiest and quickest route!</p>
+     			 <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d48374.57347346559!2d-74.03447445822863!3d40.730984475741344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x89c2590199a4c12d%3A0x35c4d69dd805cc5e!2sOne%20Vanderbilt%2C%201%20Vanderbilt%20Ave%2C%20New%20York%2C%20NY%2010017!3m2!1d40.752953999999995!2d-73.978528!4m5!1s0x89c25a2343ce7b2b%3A0x2526ddba7abd465c!2sBrooklyn%20Bridge%2C%20Brooklyn%20Bridge%2C%20New%20York%2C%20NY!3m2!1d40.7060855!2d-73.9968643!5e0!3m2!1sen!2sus!4v1740803277392!5m2!1sen!2sus" id="mapvis" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     			 <a href="https://maps.app.goo.gl/CkxyDysw5reD2ZGw9" target="_blank" rel="noopener noreferrer">View A Google Maps Route from Grand Central - LIRR to Brooklyn Bridge</a>
+     			 
+        	</section>
+        	
+        	<section id="visual-guide">
+				<h2>Brooklyn Bridge, halfway towards Brooklyn</h2>
+				<p><img src="./Pictures/walkbklynbdg.jpg" alt="The famous Brooklyn Bridge" class="about-pic"></p>
+			</section>
+						
+			<section id="bonus">
+    			<h2>BONUS: Around Brooklyn Bridge, there's a few places around the area you can check out, specifically the Brooklyn Side!</h2>
+   				<div class="slideshow-container">					
+					<div class="mySlides fade">
+    				<img src="./Pictures/bbpiers.jpg" alt="Brooklyn Bridge Park" style="width: 100%">
+						<div class="text">Pier 1 At Brooklyn Bridge Park</div>
+					</div>
+					
+					<div class="mySlides fade">
+    				<img src="./Pictures/janescarousel.jpg" alt="Jane's Carousel" style="width: 100%">
+						<div class="text">Jane's Carousel</div>
+					</div>
+					
+					<div class="mySlides fade">
+    				<img src="./Pictures/dumboview.jpg" alt="DUMBO" style="width: 100%">
+						<div class="text">The famous DUMBO View</div>
+					</div>
+					
+					
+					<!-- Next/Previous buttons -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>	
+				<br>
+			</section>
+
+
+		</main>
+		
+		<footer>
+			<div class="footerContainer">
+				<div class="footerNav">
+					<ul>
+						<li><a href="gcindex.html">Home</a></li>
+						<li><a href="gcabout.html">About</a></li>
+						<li><a href="gcpurpose.html">Purpose</a></li>
+						<li><a href="gcgallery.html">Gallery</a></li>
+						<li><a href="location.html">Location</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="footerBottom">
+				<p>&copy; 2025; Made By <span class="maker">Sivakumar Nirmalakumar</span></p>
+			</div>
+		</footer>
+		
+		<script src="gcscripts.js"></script>
+		    
+	</body>
+</html>

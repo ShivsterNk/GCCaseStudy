@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Grand Central Get-Arounds!</title>
+		<link rel="stylesheet" href="gcstyle.css">
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="navdiv">
+				<div class="logo">Grand Central Getarounds!</div>
+					<ul class="nav-menu">
+						<li class="nav-item">
+							<a href="gcindex.html" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="gcabout.html" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="gcpurpose.html" class="nav-link">Purpose</a>
+						</li>
+						<li class="nav-item">
+							<a href="gcgallery.html" class="nav-link">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a href="location.html" class="nav-link">Location</a>
+						</li>
+					</ul>
+					<div class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+			</div>
+			
+		</nav>
+		
+		<header>
+			<h1 style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-size: 2rem;">Welcome to Grand Central (LIRR) Madison!</h1>
+		</header>
+		
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#welcome">Welcome</a>
+			<a href="#entrance">Main Entrance</a>
+			<a href="#secondary-entrances">Additional Entrances</a>
+			<a href="#connections">Transit Connections</a>
+			<a href="#extras">Hours</a>
+			<a href="#tickets">Tickets</a>
+			<a href="#restrooms">Restrooms</a>
+			<a href="#lirraccess">LIRR Access</a>
+			<a href="#elevators">Elevators</a>
+		</div>
+		
+		<main>
+		
+		<button onclick="topFunction()" style="display:none;" id="backTop" title="Go to Top">Top</button>
+			<section class="menu-Container">
+				<div id="menuButton" class="menuButton" onclick="openNav()">
+					<span>Page Menu</span>
+				</div>
+			</section>
+			
+			<div id="fullscreen-container" class="fullscreen-container">
+				<button id="exit-button" class="exit-button">X</button>
+				<img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+			</div>
+			
+			<section id="welcome">
+				<h2>The newest addition to the LIRR Family!</h2>
+				<p><img src="./GCGallery/plat5.jpg" alt="LIRR Platform View" class="about-pic"></p>
+			</section>
+			
+			<p class="one">Where Is Grand Central Madison?</p>
+			
+			<section id="entrance">
+				<div class="row">
+					<div class="column">
+						<h3><img src="./Logos/wheelchair.png" alt="logo" class="inline-logo">Main Entrance:</h3>
+						<h1>383 Madison Avenue,</h1>
+						<h1>New York, NY 10017</h1>
+						<h3>Near the Corner of 47th Street and Madison Ave</h3>
+						<button style="color: black; border: 2px solid blue; padding: 14px 30px; font-size: 15px; ">
+							<a href="https://maps.app.goo.gl/vNwbq5PdGQAK4H8t9" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: none;">
+								Entrance on Google Maps
+							</a>
+						</button>
+					</div>
+					<div class="column">
+						<img src="./GCGallery/ent5.jpg" alt="Main Entrance to Grand Central Madison" style="width:80%;">
+					</div>
+				</div>
+			</section>
+			
+			<hr>
+			
+			<section id="secondary-entrances">
+				<div class="row">
+					<div class="column">
+						<img src="./Pictures/sub7.jpg" alt="Enter Grand Central Madison from Main Terminal" style="width:80%;">
+					</div>
+					<div class="column">
+						<h3>Grand Central Terminal (3 Entrances):</h3>
+						<h1>89 East 42nd Street,</h1>
+						<h1>New York, NY 10017</h1>
+						<p>The Dining Concourse on the Lower Level Is The Most Direct Entrance. </p>
+						<p><img src="./Logos/wheelchair.png" alt="logo" class="inline-logo">43rd Street and One Vanderbilt area.</p>
+						<p><img src="./Logos/wheelchair.png" alt="logo" class="inline-logo">The Biltmore Room. </p>
+					</div>
+
+				</div>
+				<hr>
+				<div class="row">
+					<div class="column">
+						<img src="./GCGallery/ent17.jpg" alt="One Vanderbilt Grand Central Madison" style="width:80%;">
+					</div>
+					<div class="column">
+						<h3><img src="./Logos/wheelchair.png" alt="logo" class="inline-logo">One Vanderbilt:</h3>
+						<h1>10 Vanderbilt Avenue,</h1>
+						<h1>New York, NY 10017</h1>
+						<p>Enter the building: You can take the stairs or the elevator down to <strong>Floor -4</strong>.</p>
+						<button style="color: black; border: 2px solid blue; padding: 14px 30px; font-size: 15px; ">
+							<a href="https://maps.app.goo.gl/Kf7RSJD9cBBngXQw7" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: none;">
+								Entrance on Google Maps
+							</a>
+						</button>
+					</div>
+
+				</div>
+			</section>
+			
+			<p class="one">Connections To?</p>
+			
+			<section id="connections">
+				<div class="row">
+					<div class="column">
+						<img src="./GCGallery/ent15.jpg" alt="42nd Street Shuttle Subway" style="width:80%;">
+						<p><img src="./Logos/4-line.png" alt="logo" class="inline-logo"><img src="./Logos/5-line.png" alt="logo" class="inline-logo"><img src="./Logos/6-line.png" alt="logo" class="inline-logo"><img src="./Logos/7-line.png" alt="logo" class="inline-logo"><img src="./Logos/s-line.png" alt="logo" class="inline-logo">At <strong>Grand Central-42nd Street Subway Station</strong>.</p>
+						<p>Use the One Vanderbilt Area of Grand Central LIRR, for the fastest connections!</p>
+					</div>
+					<div class="column">
+						<img src="./Pictures/mnrrgct.jpg" alt="Metro North" style="width:80%;">
+						<p><span style="color:green; font-size: 1.5em; font-weight: bold;">Hudson, </span>
+							<span style="color:blue; font-size: 1.5em; font-weight: bold;">Harlem, </span>
+							<span style="color:red; font-size: 1.5em; font-weight: bold;">New Haven </span> 
+							<span style="color:black; font-size: 1.5em; font-weight: bold;">lines.</span>
+						</p>
+						<p>At <strong>Grand Central Terminal. Through the Main Hall (Tracks 11-42), Or Lower Hall (101-117)</strong>.</p>
+					</div>
+				</div>
+			</section>
+			
+			<p class="one">Tickets, Hours, Access Points, other Info?</p>
+			
+				<section id="extras">
+					<br />
+					<h1>NOTE: Grand Central Madison is open daily from 5:30 am to 2 am.</h1>
+					<h1>It is CLOSED from 2am to 5:30am.</h1>
+					<h2 style="color:red;">During the closed hours, please use the LIRR from Penn Station instead. </h2>
+				</section>
+				<hr>
+				<section id="tickets">
+					<h1>Ticket Machines:</h1>
+					<h3>You can buy Tickets from the Ticket Office Booth between the 46th and 47th Street area on the Concourse level.</h3>
+					<p><img src="./GCGallery/ent6.jpg" alt="LIRR Ticket Machines near 47th Street" class="about-pic"></p>
+					<h3>You can also buy Tickets from the Machines. These are located at the 44th, 45th, and 47th Street areas on the Concourse level.</h3>
+				</section>
+				<hr>
+				<section id="restrooms">
+					<h1>Restrooms:</h1>
+					<h3>There are 2 ADA Restrooms available on concourse level only! </h3>
+					<h3>One is near the 45th Street area. The other is near the ticket office between 46th and 47th Streets.</h3>
+					<p><img src="./GCGallery/conc9.jpg" alt="LIRR Concourse and Restroom View" class="about-pic"></p>
+					<h4>The restrooms here at 45th Street, are present in the 2 openings in the wall, in this picture.</h4>
+				</section>
+				<hr>
+				<section id="lirraccess">
+					<h1>Accessing the LIRR:</h1>
+					<h3>From the concourse level, escalator banks will take you to/from the Mezzanine, where you can find the tracks.</h3>
+					<p><img src="./GCGallery/conc13.jpg" alt="One of the LIRR Escalator Banks" class="about-pic"></p>
+					<h3>These are located on every block throughout the complex, at 45th, 46th, 47th, and 48th Streets.</h3>
+					<h3>There is also an elevator that will take you from the LIRR concourse to/from the LIRR Mezzanine.</h3>
+					<h3>It is located between the 46th and 47th Street escalator banks.</h3>
+					<h3>There are 8 tracks, 4 platforms, and 2 levels. The upper level host tracks 201-204, lower hosts 301-304.</h3>
+					<h3>Use the mezzanine to find your track and train.</h3>
+					<p><img src="./GCGallery/mezz13.jpg" alt="LIRR Mezzanine Area" class="about-pic"></p>
+				</section>
+				<hr>
+				<section id="elevators">
+					<h1>Street-to-Concourse Elevators:</h1>
+					<h3>There are many elevators sprinkled across the complex.</h3>
+					<h3>There are 3 Street-To-Concourse Elevators.</h3>
+					<p><img src="./GCGallery/ent1.jpg" alt="LIRR Elevator at 44th Street" class="about-pic"></p>
+					<h4>One at 44th Street, near 49 East 44th Street, shown above as an Elevator example. </h4>
+					<h4>One near 47th Street and Madison Avenue.</h4>
+					<h4>One at 48th Street, near 280 Park Avenue.</h4>
+					<h3>There is also the Concourse-to/from-Mezzanine Elevators, near the 46/47th Street area.</h3>
+					<p><img src="./GCGallery/conc15.jpg" alt="LIRR Elevators at Concourse Level" class="about-pic"></p>
+				</section>
+	
+		</main>
+
+		<footer>
+			<div class="footerContainer">
+				<div class="footerNav">
+					<ul>
+						<li><a href="gcindex.html">Home</a></li>
+						<li><a href="gcabout.html">About</a></li>
+						<li><a href="gcpurpose.html">Purpose</a></li>
+						<li><a href="gcgallery.html">Gallery</a></li>
+						<li><a href="location.html">Location</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="footerBottom">
+				<p>&copy; 2025; Made By <span class="maker">Sivakumar Nirmalakumar</span></p>
+			</div>
+		</footer>
+		
+		<script src="gcscripts.js"></script>
+	</body>
+</html>
+		
