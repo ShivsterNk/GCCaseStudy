@@ -71,7 +71,7 @@ if(topbutton) {
     };
     
     function scrollFunction() {
-        if(window.scrollY > 40) {
+        if(window.scrollY > 1200) {
             topbutton.style.display = "block";
         }
         else {
@@ -104,7 +104,7 @@ if (document.getElementById("places")) {
     });
 }
 
-/* HAMBURGER MENU */
+/*HAMBURGER MENU */
 document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.querySelector(".hamburger");
     if (hamburger) {
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
-});		
+});	
 
 /* SIDE NAVIGATION */
 window.onload = function() {
@@ -182,7 +182,14 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         console.log('Error: Elements not found!');
     }
+
+    if(!exitbutton || !fullscreenContainer) return;
+
+    exitButton.addEventListener('click', function() {
+        fullscreenContainer.style.display = 'none';
+    });
 });    	
+
 // Allow user to exit fullscreen by pressing the 'Esc' key
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {

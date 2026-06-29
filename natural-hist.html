@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Grand Central Get-Arounds!</title>
+		<link rel="stylesheet" href="gcstyle.css">
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="navdiv">
+				<div class="logo">Grand Central Getarounds!</a></div>
+						<ul class="nav-menu">
+						<li class="nav-item">
+							<a href="gcindex.html" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="gcabout.html" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="gcpurpose.html" class="nav-link">Purpose</a>
+						</li>
+						<li class="nav-item">
+							<a href="gcgallery.html" class="nav-link">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a href="location.html" class="nav-link">Location</a>
+						</li>
+					</ul>
+					<div class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+			</div>
+		</nav>
+		
+		<header style="background-image: url('./Pictures/nathistbg.jpg'); background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center;">
+			<h1 style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-size: 2rem;">To Get To The Museum of Natural History</h1>
+		</header>
+		
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#directions">Directions</a>
+			<a href="#additional-info">Additional Info</a>
+			<a href="#minutes">Time Taken</a>
+			<a href="#map">Map with Directions</a>
+			<a href="#visual-guide">Visual Guide</a>
+		</div>
+		
+		<main>
+		<button onclick="topFunction()" style="display:none;" id="backTop" title="Go to Top">Top</button>
+			<section class="menu-Container">
+				<div id="menuButton" class="menuButton" onclick="openNav()">
+					<span>Page Menu</span>
+				</div>
+			</section>
+			
+			<div id="fullscreen-container" class="fullscreen-container">
+				<button id="exit-button" class="exit-button">X</button>
+				<img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+			</div>
+
+            <h2 style="color:red;">NOTE: While 81st Street is undergoing ADA-Station Improvements, those with ADA-Needs should instead take the bus.</h2>
+			<p><img src="./Pictures/81stElevator.jpg" alt="The underconstruction elevator at 81st Street" class="about-pic"></p>
+            <div class="info-note" style="color: indianred; font-size: 1.25rem;">
+                <strong>Travel Note: </strong>
+                For the American Museum of Natural History, Penn Station may be slightly faster than Grand Central.
+                <p>Board a 168th Street bound <img src="./Logos/c-line.svg" alt="logo" class="inline-logo"> Train, and get off at the <strong>81st Street</strong> subway station.</p>
+            </div>
+            <p>The Subway and Bus Fare is <strong>$3.00</strong>. Pay with an OMNY Card or Contactless Payment, or a MetroCard.</p>
+			<p>MetroCards are also accepted, but can no longer be bought or refilled.</p>
+            <br />
+            
+
+            <h2 style="color:peru;">Choose which option to see how to get to Natural History.</h2>
+            <div class="button-container">
+			<button class="choice" onclick="myFunction('myDIV1')">Subway</button>
+				<div id="myDIV1" style="display: none;">
+			    <section id="subway-directions">
+				<h2>By Subway</h2>
+				<div id="directions-text">
+					<p>Exit from the platform your LIRR train arrives on and head to the mezzanine. Then, take the <span style="color:#8A2BE2; font-size:18px; font-weight:bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">47th Street</span> escalators to the concourse.</p>
+					<p>Once there, find the exit for <strong>47th Street</strong>, where you will end up on street level near 47th Street and Madison Avenue.</p>
+					<p>Do note, there are 2 staircases at this area, separated by the ticket machine.</p>
+					<p><img src="./GCGallery/ent6.jpg" alt="The stairs and elevator exit at 47th Street" class="about-pic"></p>
+					<p>Walk west along <strong>47th Street</strong>, until you reach 6th Avenue.</p>
+                    <p>Turn right and find the entrances to the <strong>47th-50th Streets-Rockefeller Center</strong> subway station.</p>
+					<p>Get to the subway entrance, head for the turnstyles, pay and enter the subway! </p>
+                    <p><strong>OPTION 1:</strong> On weekdays, board an uptown <img src="./Logos/b-line.svg" alt="logo" class="inline-logo"> Train, and get off at the <strong>81st Street</strong> subway station.</p>
+                    <p><strong>OPTION 2:</strong> On weekends, board an uptown <img src="./Logos/d-line.svg" alt="logo" class="inline-logo"> Train, and get off at the <strong>59th Street-Columbus Circle</strong> subway station.</p>
+                    <p>Then transfer to a 168th Street bound <img src="./Logos/c-line.svg" alt="logo" class="inline-logo"> Train, and get off at the <strong>81st Street</strong> subway station.</p>
+                    <p>Get off the subway, exit the station, and head upstairs to the street level, finding the appropriate entrance for the museum.</p>
+                </div>
+                </div>
+                </section>
+                
+            <button class="choice" onclick="myFunction('myDIV2')">Bus</button>
+				<div id="myDIV2" style="display: none;">
+                <section id="bus-directions">
+				<h2>By Bus</h2>
+				<div id="directions-text">
+					<p>Exit from the platform your LIRR train arrives on to the mezzanine. Then, head up the <span style="color:#008080; font-size:18px; font-weight:bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">48th Street</span> escalators to the concourse.</p>
+					<p>Then, take the elevator to street level, where you'll exit near the corner of 48th Street and Madison Avenue.</p>
+					<p>Walk northbound to 49th Street and Madison Avenue</p>
+					<p>There are 2 places you can board the bus: </p>
+					<h3>Near East 49th Street and Madison - Northbound M3 or M4 Bus</h3>
+					<h3>Near East 50th Street and Madison - Northbound M1 or M2 Bus</h3>
+				</div>		
+
+                <h2>Board any one of these buses:</h2>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="./Pictures/m1bus.jpg" alt="M1 Bus" style="width: 100%">
+                            <div class="text">Board an M1 Bus going to Harlem-147th Street</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="./Pictures/m2bus.jpg" alt="M2 Bus" style="width: 100%">
+                            <div class="text">Board an M2 Bus going to Washington Heights</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="./Pictures/m3bus.jpg" alt="M3 Bus" style="width: 100%">
+                            <div class="text">Board an M3 Bus going to Fort George</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="./Pictures/m4bus.jpg" alt="M4 Bus" style="width: 100%">
+                            <div class="text">Board an M4 Bus going to the Cloisters</div>
+                        </div>
+                        <!-- Next/Previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>	
+                    <br>
+
+                    <div id="directions-text">
+                    <p>Regardless of or which bus you take...</p>
+                    <p style="color: red; font-weight: bold;">You MUST get off at East 79th Street and Madison Avenue!!</p>
+                    <p>After getting off, walk back to 79th Street and board a westbound <span style="font-weight: bold; color:rgb(0, 179, 255);">M79 Select Bus</span> towards the West Side.</p>
+                    <p><img src="./Pictures/m79sbs.jpg" alt="The M79 Select Bus" class="about-pic"></p>
+                    <p>You can either tap with your OMNY or Contactless Payment to get on the M79 bus from your first tap.</p>
+                    <p>Ride the M79 and get off at <strong>81st Street and Central Park West</strong>.</p>
+                    <p>You can walk to either entrance at the Museum</p>
+					</div>
+                </section>
+            </div>
+
+            <br />
+			
+			<section id="additional-info">
+				<h2>Some Tips and Tricks</h2>
+				<div id="directions-text">			
+					<p>At Grand Central, there is a set of <a href="./GCGallery/mezz7.jpg" id="image-link" target="_blank">elevators</a> that will take you up from the mezzanine to the concourse.</p>
+					<p>It's located between the <strong>46th Street and 47th Street</strong> escalator banks on the mezzanine, so look for signs.</p>
+					<p>There is another elevator available on the <strong>Concourse</strong> level, that will take you to the Street level.</p> 
+					<p><img src="./GCGallery/ent7.jpg" alt="The secret elevator exit at 47th Street" class="about-pic"></p>
+					<p>This elevator is located in a small corner past the ticket at 47th Street, facing away from the <strong>47th Street</strong> escalator bank.</p>
+				</div>
+			</section>
+			
+			<section id="minutes">
+				<h2>Expected Time Taken - Minutes</h2>
+				<div id="directions-text">
+					<p>To get onto street level from the LIRR tracks, it will take you roughly <strong>5 Minutes</strong> depending on your speed and method you chose.</p>
+                    <p>To get from the street level to Natural History by <strong>Subway</strong>, it will take you an additonal <strong>19 Minutes</strong>, depending on the time of day.</p>
+                    <p>To get from the street level to Natural History by <strong>Bus</strong>, it will take you an additonal <strong>30 Minutes</strong>, depending on the time of day.</p>
+				</div>
+			</section>
+			
+			<section id="map">
+     			 <h2>Map Overview</h2>
+     			 <p>Below is a map showing the route from Grand Central (when you get onto street level) to Natural History.</p>
+     			 <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d24173.804448815838!2d-73.99638032743111!3d40.76806056862157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x89c258fe759ca03d%3A0xfe7cc713a308b3a1!2s383%20Madison%20Ave%2C%20New%20York%2C%20NY%2010179!3m2!1d40.7555476!2d-73.9767009!4m5!1s0x89c258f4b00f7a09%3A0xa27d8172624c5db1!2sAmerican%20Museum%20of%20Natural%20History%2C%20200%20Central%20Prk%20W%2C%20New%20York%2C%20NY%2010024!3m2!1d40.7813241!2d-73.9739882!5e0!3m2!1sen!2sus!4v1779656298600!5m2!1sen!2sus" id="mapvis" width="600" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br /> 
+     			 <a href="https://maps.app.goo.gl/mCEasVVrPs5nMs8Z7" target="_blank" rel="noopener noreferrer">View A Google Maps Route from Grand Central (47th St and Madison Avenue) to Natural History</a>
+     		</section>
+			
+			<section id="location">
+				<h2>Museum of Natural History</h2>
+				<p><img src="./Pictures/naturalhist.jpg" alt="Natural History Entrance on Central Park West" class="about-pic"></p>
+			</section>
+			
+		</main>
+		<footer>
+			<div class="footerContainer">
+				<div class="footerNav">
+					<ul>
+						<li><a href="gcindex.html">Home</a></li>
+						<li><a href="gcabout.html">About</a></li>
+						<li><a href="gcpurpose.html">Purpose</a></li>
+						<li><a href="gcgallery.html">Gallery</a></li>
+						<li><a href="location.html">Location</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="footerBottom">
+				<p>&copy; 2025; Made By <span class="maker">Sivakumar Nirmalakumar</span></p>
+			</div>
+		</footer>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="gcscripts.js"></script>
+		
+	</body>
+</html>
