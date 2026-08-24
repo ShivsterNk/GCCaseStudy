@@ -315,6 +315,11 @@ const allImages = [
 			category: "entrance"
 		},
 		{ 
+			src: 'GCGallery/ent26.jpg', 
+			desc: 'Another view of the new 395 Madison Avenue Entrance at GCM.',
+			category: "entrance"
+		},
+		{ 
 			src: 'GCGallery/mezz1.jpg', 
 			desc: 'A View of the Mezzanine and a staircase/escalator near 47th Street.' ,
 			category: "mezzanine"
@@ -747,6 +752,11 @@ const allImages = [
 		{ 
 			src: 'GCGallery/train23.jpg', 
 			desc: 'A muddy yet close up view of an M9 resting at GCM' ,
+			category: "train"
+		},
+		{ 
+			src: 'GCGallery/train24.jpg', 
+			desc: 'A typical angle of an M7 Laying over on Track 201' ,
 			category: "train"
 		}
 ];
