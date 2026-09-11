@@ -1,0 +1,197 @@
+<html>
+<head>
+
+<title>Get To Areas from Grand Central LIRR</title>
+
+<style type="text/css">
+body {
+	background: black;
+	color: #DAA520;
+	font-family: arial;
+	text-align: center;
+	font-weight: bold;	
+}
+
+#pagewrap {
+	background-color: white;
+	border: 6px red double;
+	border-radius: 25px;
+	padding: 20px;
+	width: 800px;
+	margin: 30px auto 0px auto;
+}
+
+#header {
+	font-size: 2.5em;
+	background-color: darkred;
+}
+
+#content {
+	background-color: #B0E0E6;
+	text-align: center;
+	padding: 20px;
+}
+
+.formtext {
+	padding: 5px 0px 5px 0px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.formfield {
+	border: 2px black solid;
+	background: #FFA07A;
+	padding: 8px;
+	font-weight: bold;
+	width: 450px;
+	font-size: 1em;
+}
+
+.paddingclass {
+	text-align: center;
+	padding: 25px 0px 25px 0px; /* top right bottom left */
+}
+
+#travelbutton {
+	background: #2E8B57;
+	color: #FFDEAD;
+	font-size: 1.2em;
+	padding: 5px 0px 5px 0px;
+	border: 4px blue solid;
+	border-radius: 15px;
+	width: 100px;
+	cursor: grab;
+}
+
+#travelbutton:hover {
+	background: white;
+	color: green;
+	border: 4px red solid;
+}
+
+.spacer {
+	margin-top: 10px;
+}
+
+</style>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+$(document).ready( function() {
+
+	$("#travelbutton").on("click", function() {
+		
+		var dest;
+		var msg;	
+		var selectedPlace = $("#place").val();
+    	var selectedTrack = $("input[name='TrackOptions']:checked").val();
+		
+		// if statement for when person chooses place
+		if( selectedPlace == "ts") {
+			dest = "Times Square - The Red Stairs";
+			msg = "<div style='color:red'>To get to: " + dest + "</div>";
+			msg += "<div>Board towards the rear of the train, at your stop.</div>";
+			msg += "<div>Get off and walk to the 47th Street mezzanine, take the long escalator up, exit straight onto the street level.</div>";
+			msg += "<div>Cross Madison Avenue on 47th Street, and walk 3 Blocks West</div>";
+			msg += "<div>At 7th Avenue and 47th Street, make a Left!</div>";
+		}
+		else if ( selectedPlace == "bp") {
+			dest = "Bryant Park";
+			msg = "<div style='color:red'>To get to " + dest + "</div>";
+			msg += "<div>Board towards the front of the train, at your stop.</div>";
+			msg += "<div>Get off and walk to the 45th Street mazzanine, take the long escalator up, make a left on the main level.</div>";
+			msg += "<div>Take the 44th Street elevator, and exit onto the street level.</div>";
+			msg += "<div>Turn right towards Madison Avenue, and walk straight to 5th Avenue</div>";
+			msg += "<div>At 44th Street and 5th Avenue, make a Left, walk at least 2 blocks south!</div>";
+		}
+		else if ( selectedPlace == "cp" ){
+			dest = "Central Park - Bethesda Terrace";
+			msg = "<div style='color:red'>To get to " + dest + "</div>";
+			msg += "<div>Board towards the rear of the train, at your stop.</div>";
+			msg += "<div>Get off and walk to the 47th Street mezzanine, take the long escalator up, exit straight onto the street level.";
+			msg += "<div>Turn right, walk 2 blocks north to 49th Street, and board an uptown M1, M2, M3, or M4 Bus</div>";
+			msg += "<div>Get off at Madison and 72nd Street, and walk slightly back to 72nd Street.</div>";
+			msg += "<div>Make a right and walk along 72nd street and cross 5th Avenue.</div>";
+			msg += "<div>Walk along Terrance Drive, and you'll arrive at the main area of the Park!</div>";
+		}
+		else {
+			dest = "Union Square - Market Place";
+			msg = "<div style='color:red'>To get to " + dest + "</div>";
+			msg += "<div>Board towards the front of the train, at your stop.</div>";
+			msg += "<div>Get off and walk to the 45th Street mezzanine, take the long escalator up, make a left on the main level.</div>"; 
+			msg += "<div>Walk towards the One Vanderbilt exit, towards the subway entrance for the Shuttle train.</div>";
+			msg += "<div>Walk to the subway entrance, pay, then make a left away from the shuttle train, to the 4, 5, and 6 train area.</div>";
+			msg += "<div>Board a Downtown 4 or 5 express train, get off at 14th Street. Exit onto street level.</div>";
+		}
+		var outputMessage = msg;				
+		
+		var trackmsg; 
+		if ( selectedTrack == "twonetwo" ){
+			trackmsg += "<div style='color:blue'>NOTE: From Track 201/202, head downstairs and turn to the big escalator.</div>";
+		}
+		else if ( selectedTrack == "twthreefour" ){
+			trackmsg += "<div style='color:#8FBC8F'>NOTE: From Track 203/204, head downstairs, turn, walk straight across to the big escalator.</div>";
+		}
+		else if ( selectedTrack == "thonetwo" ){
+			trackmsg += "<div style='color:purple'>NOTE: From Track 301/302, head upstairs and turn to the big escalator.</div>";
+		}
+		else if ( selectedTrack == "ththreefour" ){
+			trackmsg += "<div style='color:#D2691E'>NOTE: From Track 303/304, head upstairs, turn, walk straight across to the big escalator.</div>";
+		}
+		else {
+			trackmsg = "<div style='color:black'>NO TRACK SELECTED.</div>";
+		}
+		outputMessage += trackmsg;
+					
+		// print output
+		$("#output").hide().html(outputMessage).show("fade");	
+		
+	} ); // ends click handler	
+		
+} ); // ends document
+
+</script>
+
+</head>
+<body id="body">
+
+<div id="pagewrap">
+
+	<div id="header" class="paddingclass">
+		<div style="color: #72FC00">Grand Central Get-Arounds!</div>
+	</div>
+	
+	<div id="content">
+		
+		<form>
+		
+			<div class="formtext">Choose Your Destination</div>
+			<select id="place" class="formfield">
+				<option value="ts">Times Square Stairs</option>
+				<option value="bp">Bryant Park</option>
+				<option value="cp">Central Park</option>
+				<option value="us">Union Square</option>
+			</select>
+			
+			<div class="spacer">Which Track Will You Arrive On?</div>
+			<div><input type="radio" id="track1" name="TrackOptions" value="twonetwo"> Track 201/202</div>
+			<div><input type="radio" id="track2" name="TrackOptions" value="twthreefour"> Track 203/204</div>
+			<div><input type="radio" id="track3" name="TrackOptions" value="thonetwo"> Track 301/302</div>
+			<div><input type="radio" id="track4" name="TrackOptions" value="ththreefour"> Track 303/304</div>
+			
+			<div style="margin-top:10px;" > 
+				<input type="button" value="Go!" id="travelbutton" />
+			</div>
+					
+		</form>
+		
+		<div id="output"></div>
+		
+	</div>
+
+</div> <!-- ends div#pagewrap -->
+
+</body>
+</html>

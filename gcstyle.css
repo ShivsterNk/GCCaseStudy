@@ -985,6 +985,23 @@ p.one {
 	transform: scale(0.95);
 }
 
+.link-btn {
+	display: inline-block;
+	color: black; 
+	background-color: ghostwhite;
+	border: 3px solid blue; 
+	border-radius: 10px;
+	padding: 15px 25px; 
+	font-size: clamp(0.75rem, 2vw, 1rem); 
+	text-decoration: none;
+}
+
+.link-btn:hover {
+	color: ghostwhite; 
+	background-color: skyblue;
+	border: 2px solid black;
+}
+
 @media screen and (max-width: 768px) {
 	.row {
 		flex-direction: column;
