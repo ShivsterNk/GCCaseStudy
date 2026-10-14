@@ -130,11 +130,6 @@ const allImages = [
 			category: "concourse"
 		},
 		{ 
-			src: 'GCGallery/conc19.jpg', 
-			desc: 'A near central view of the 46th Street area looking north.' ,
-			category: "concourse"
-		},
-		{ 
 			src: 'GCGallery/conc20.jpg', 
 			desc: 'The newly opened and somewhat empty, Tracks Bar Dining and Grill Food Store.' ,
 			category: "concourse"
@@ -195,13 +190,28 @@ const allImages = [
 			category: "concourse"
 		},
 		{ 
-			src: 'GCGallery/ent1.jpg', 
-			desc: 'Elevator entrance near 49 East 44th Street near the MetLife Building. Brings you to the concourse, where you can access the LIRR, Metro North, and Subway.',
-			category: "entrance"
+			src: 'GCGallery/conc32.jpg', 
+			desc: 'The newly refurbrished escalators leading to/from the Biltmore Room.',
+			category: "concourse"
 		},
 		{ 
-			src: 'GCGallery/ent2.jpg', 
+			src: 'GCGallery/conc33.jpg', 
+			desc: 'The former Blue Doors leading to the Dining Concourse of Grand Central.',
+			category: "concourse"
+		},
+		{ 
+			src: 'GCGallery/conc34.jpg', 
+			desc: 'The escalator/staircase that used to have the blue doors, now removed for easier flow.',
+			category: "concourse"
+		},
+		{ 
+			src: 'GCGallery/conc35.jpg', 
 			desc: 'Concourse with artwork, countdown clock, and signs pointing to two elevators. The one on the left goes to Metro North, the right to Street Level.',
+			category: "concourse"
+		},
+		{ 
+			src: 'GCGallery/ent1.jpg', 
+			desc: 'Elevator entrance near 49 East 44th Street near the MetLife Building. Brings you to the concourse, where you can access the LIRR, Metro North, and Subway.',
 			category: "entrance"
 		},
 		{ 
@@ -295,6 +305,11 @@ const allImages = [
 			category: "entrance"
 		},
 		{ 
+			src: 'GCGallery/ent21.jpg', 
+			desc: 'The new ADA-Accessible entrance at 45th Street and Madison Avenue.',
+			category: "entrance"
+		},
+		{ 
 			src: 'GCGallery/ent22.jpg', 
 			desc: 'Looking towards the escalators, stairs, and elevator at the new 45th Street entrance.',
 			category: "entrance"
@@ -317,6 +332,11 @@ const allImages = [
 		{ 
 			src: 'GCGallery/ent26.jpg', 
 			desc: 'Another view of the new 395 Madison Avenue Entrance at GCM.',
+			category: "entrance"
+		},
+		{ 
+			src: 'GCGallery/ent27.jpg', 
+			desc: 'Another view of the elevator entrance at 44th Street.',
 			category: "entrance"
 		},
 		{ 
@@ -395,11 +415,6 @@ const allImages = [
 			category: "mezzanine"
 		},
 		{ 
-			src: 'GCGallery/mezz20.jpg', 
-			desc: 'Walking along the art-quoted hallway of the mezzanine, with an empty platform below.' ,
-			category: "mezzanine"
-		},
-		{ 
 			src: 'GCGallery/mezz21.jpg', 
 			desc: 'A View of the staircase/escalator leading down to Tracks 303 and 304.' ,
 			category: "mezzanine"
@@ -427,11 +442,6 @@ const allImages = [
 		{ 
 			src: 'GCGallery/mezz31.jpg', 
 			desc: 'The exit to the 45th Street Escalator Bank to the Concourse.' ,
-			category: "mezzanine"
-		},
-		{ 
-			src: 'GCGallery/mezz32.jpg', 
-			desc: 'The exit to the 46th Street Escalator Bank to the Concourse.' ,
 			category: "mezzanine"
 		},
 		{ 
@@ -492,6 +502,11 @@ const allImages = [
 		{ 
 			src: 'GCGallery/mezz47.jpg', 
 			desc: 'A quote, a long empty mezzanine, with a view of tracks 303 and 304.' ,
+			category: "mezzanine"
+		},
+		{ 
+			src: 'GCGallery/mezz48.jpg', 
+			desc: 'The 45th Street Area with the LED Beam glowing Purple for Breast Cancer month,',
 			category: "mezzanine"
 		},
 		{ 
@@ -605,11 +620,6 @@ const allImages = [
 			category: "platform"
 		},
 		{ 
-			src: 'GCGallery/plat33.jpg', 
-			desc: 'A not in service M7 train sitting on the platform, with a glowing blue 47th St Beam' ,
-			category: "platform"
-		},
-		{ 
 			src: 'GCGallery/plat34.jpg', 
 			desc: 'A not in service M7 train sitting next to one of two platform elevators located at GCM' ,
 			category: "platform"
@@ -671,12 +681,12 @@ const allImages = [
 		},
 		{ 
 			src: 'GCGallery/train7.jpg', 
-			desc: 'Train 1296, the 12:06pm weekday train to Massapequa with M9s, gearing to depart track 304.' ,
+			desc: 'A muddy yet close up view of an M9 resting at GCM' ,
 			category: "train"
 		},
 		{ 
 			src: 'GCGallery/train8.jpg', 
-			desc: 'A close up of Train 1296 with M9s, gearing to depart track 304.' ,
+			desc: 'Train 1296, the 12:06pm weekday train to Massapequa with M9s, gearing to depart track 304.' ,
 			category: "train"
 		},
 		{ 
@@ -686,12 +696,12 @@ const allImages = [
 		},
 		{ 
 			src: 'GCGallery/train10.jpg', 
-			desc: 'A slightly wider view of an M7 layover on Track 204' ,
+			desc: 'Another M7 laying over on Track 202 on a weekday afternoon' ,
 			category: "train"
 		},
 		{ 
 			src: 'GCGallery/train11.jpg', 
-			desc: 'Another M7 laying over on Track 202 on a weekday afternoon' ,
+			desc: 'A rather muddy yet interesting view of an M7 heading into GCM, coming from Long Island' ,
 			category: "train"
 		},
 		{ 
@@ -715,11 +725,6 @@ const allImages = [
 			category: "train"
 		},
 		{ 
-			src: 'GCGallery/train16.jpg', 
-			desc: 'A slightly squeezed in view of Train 2750 with M7s' ,
-			category: "train"
-		},
-		{ 
 			src: 'GCGallery/train17.jpg', 
 			desc: 'Train 2750 creeping out of GCM with M7s',
 			category: "train"
@@ -727,11 +732,6 @@ const allImages = [
 		{ 
 			src: 'GCGallery/train18.jpg', 
 			desc: 'Train 431 of M9s, crawling into GCM on track 304 from Port Washington' ,
-			category: "train"
-		},
-		{ 
-			src: 'GCGallery/train19.jpg', 
-			desc: 'A slow-by view of Train 431 coming into GCM as the M9 snails in' ,
 			category: "train"
 		},
 		{ 
@@ -745,18 +745,28 @@ const allImages = [
 			category: "train"
 		},
 		{ 
-			src: 'GCGallery/train22.jpg', 
-			desc: 'A rather muddy yet interesting view of an M7 heading into GCM, coming from Long Island' ,
-			category: "train"
-		},
-		{ 
-			src: 'GCGallery/train23.jpg', 
-			desc: 'A muddy yet close up view of an M9 resting at GCM' ,
-			category: "train"
-		},
-		{ 
 			src: 'GCGallery/train24.jpg', 
 			desc: 'A typical angle of an M7 Laying over on Track 201' ,
+			category: "train"
+		},
+		{ 
+			src: 'GCGallery/train25.jpg', 
+			desc: 'Train 6423 from Port Wash with M7s, resting at GCM on Track 202' ,
+			category: "train"
+		},
+		{ 
+			src: 'GCGallery/train26.jpg', 
+			desc: 'Train 8750 to Far Rockaway with M7s, gearing to depart Track 201' ,
+			category: "train"
+		},
+		{ 
+			src: 'GCGallery/train27.jpg', 
+			desc: 'The Northernmost Car of an 8 Car M9 Set laying over on Track 302' ,
+			category: "train"
+		},
+		{ 
+			src: 'GCGallery/train28.jpg', 
+			desc: 'The Southernmost Car of an 8 Car M9 Set laying over on Track 302' ,
 			category: "train"
 		}
 ];
