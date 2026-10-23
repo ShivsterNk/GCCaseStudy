@@ -45,7 +45,7 @@
 			<a href="#additional-info">Additional Info</a>
 			<a href="#minutes">Time Taken</a>
 			<a href="#map">Map with Directions</a>
-			<a href="#visual-guide">Visual Guide</a>
+			<a href="#visual">Visual</a>
 		</div>
 		
 		<main>
@@ -65,46 +65,48 @@
 			<p>MetroCards are also accepted, but can no longer be bought or refilled.</p>
             <br />
 
-            <h2 style="color:peru;">To Get Out of Grand Central LIRR</h2>
-            <div id="directions-text">
-                <p>Exit from the platform your LIRR train arrives on and head to the mezzanine. Then, take the <span style="color:#8A2BE2; font-size:18px; font-weight:bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">47th Street</span> escalators to the concourse.</p>
-			    <p>Once there, find the exit for <strong>47th Street</strong>, where you will end up on street level near 47th Street and Madison Avenue.</p>
-			    <p>Do note, there are 2 staircases at this area, separated by the ticket machine.</p>
-			    <p><img src="./GCGallery/ent6.jpg" alt="The stairs and elevator exit at 47th Street" class="about-pic"></p>
-			</div>
+			<section id="directions">
+				<h2 style="color:peru;">To Get Out of Grand Central LIRR</h2>
+				<div id="directions-text">
+					<p>Exit from the platform your LIRR train arrives on and head to the mezzanine. Then, take the <span style="color:#8A2BE2; font-size:18px; font-weight:bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">47th Street</span> escalators to the concourse.</p>
+					<p>Once there, find the exit for <strong>47th Street</strong>, where you will end up on street level near 47th Street and Madison Avenue.</p>
+					<p>Do note, there are 2 staircases at this area, separated by the ticket machine.</p>
+					<p><img src="./GCGallery/ent6.jpg" alt="The stairs and elevator exit at 47th Street" class="about-pic"></p>
+				</div>
 
-            <h2>Choose which option to see how to get to Roosevelt Island.</h2>
-            <div class="button-container">
-			<button class="choice" onclick="myFunction('myDIV1')">Fast</button>
-				<div id="myDIV1" style="display: none;">
-			    <section id="subway-directions">
-				<div id="directions-text">
-					<p>Walk west along <strong>47th Street</strong>, until you reach 6th Avenue.</p>
-                    <p>Turn right and find the entrances to the <strong>47th-50th Streets-Rockefeller Center</strong> subway station.</p>
-					<p>Get to the subway entrance, head for the turnstyles, pay and enter the subway! </p>
-                    <p><strong>OPTION 1:</strong> On weekdays from 6am-9:30pm, board an uptown <img src="./Logos/m-line.svg" alt="logo" class="inline-logo"> Train, and get off at the <strong>Roosevelt Island</strong> subway station.</p>
-                    <p><strong>OPTION 2:</strong> On weekends and nights, board an uptown <img src="./Logos/f-line.png" alt="logo" class="inline-logo"> Train, and get off at the <strong>Roosevelt Island</strong> subway station.</p>
-                    <p>Walk south along West Road, until West Main Street, where you will reach the heart of Roosevelt Island!</p>
-                </div>
-                </div>
-                </section>
-                
-            <button class="choice" onclick="myFunction('myDIV2')">Scenic</button>
-				<div id="myDIV2" style="display: none;">
-                <section id="bus-directions">
-				<div id="directions-text">
-					<p>Walk towards the bus stop on the southeast corner of 47th Street and Madison Avenue</p>
-					<p>Board a Queens/Jackson Heights bound <strong>Q32</strong> bus.</p>
-                    <p><img src="./Pictures/q32bus.jpg" alt="The stairs and elevator exit at 47th Street" class="about-pic"></p>
-                    <p>Get off at <strong>59th Street and 3rd Avenue</strong>.</li>
-                    <p>Walk along 59th Street towards <strong>2nd Avenue</strong>, then turn left, and walk north towards 60th Street.</p>
-                    <p>Find the entrance for the <strong style="color: red">Roosevelt Island Tramway</strong>, head upstairs via the stairs or elevator. Pay and enter!</p>
-					<p><img src="./Pictures/roostram.jpg" alt="The stairs and elevator exit at 47th Street" class="about-pic"></p>
-                    <p>The ride takes roughly 5 minutes, but be sure to soak in the beautiful views of the city skyline!</p>
-				</div>		
-               
-                </section>
-            </div>
+				<h2>Choose which option to see how to get to Roosevelt Island.</h2>
+				<div class="button-container">
+				<button class="choice" onclick="myFunction('myDIV1')">Fast</button>
+					<div id="myDIV1" style="display: none;">
+					<section id="subway-directions">
+					<div id="directions-text">
+						<p>Walk west along <strong>47th Street</strong>, until you reach 6th Avenue.</p>
+						<p>Turn right and find the entrances to the <strong>47th-50th Streets-Rockefeller Center</strong> subway station.</p>
+						<p>Get to the subway entrance, head for the turnstyles, pay and enter the subway! </p>
+						<p><strong>OPTION 1:</strong> On weekdays from 6am-9:30pm, board an uptown <img src="./Logos/m-line.svg" alt="logo" class="inline-logo"> Train, and get off at the <strong>Roosevelt Island</strong> subway station.</p>
+						<p><strong>OPTION 2:</strong> On weekends and nights, board an uptown <img src="./Logos/f-line.png" alt="logo" class="inline-logo"> Train, and get off at the <strong>Roosevelt Island</strong> subway station.</p>
+						<p>Walk south along West Road, until West Main Street, where you will reach the heart of Roosevelt Island!</p>
+					</div>
+					</div>
+					</section>
+					
+				<button class="choice" onclick="myFunction('myDIV2')">Scenic</button>
+					<div id="myDIV2" style="display: none;">
+					<section id="bus-directions">
+					<div id="directions-text">
+						<p>Walk towards the bus stop on the southeast corner of 47th Street and Madison Avenue</p>
+						<p>Board a Queens/Jackson Heights bound <strong>Q32</strong> bus.</p>
+						<p><img src="./Pictures/q32bus.jpg" alt="The stairs and elevator exit at 47th Street" class="about-pic"></p>
+						<p>Get off at <strong>59th Street and 3rd Avenue</strong>.</li>
+						<p>Walk along 59th Street towards <strong>2nd Avenue</strong>, then turn left, and walk north towards 60th Street.</p>
+						<p>Find the entrance for the <strong style="color: red">Roosevelt Island Tramway</strong>, head upstairs via the stairs or elevator. Pay and enter!</p>
+						<p><img src="./Pictures/roostram.jpg" alt="The stairs and elevator exit at 47th Street" class="about-pic"></p>
+						<p>The ride takes roughly 5 minutes, but be sure to soak in the beautiful views of the city skyline!</p>
+					</div>		
+				
+					</section>
+				</div>
+			</section>
 
             <br />
 			
@@ -135,7 +137,7 @@
      			 <a href="https://maps.app.goo.gl/r1HvzAneaFRhLDVy9" target="_blank" rel="noopener noreferrer">View A Google Maps Route from Grand Central (47th St and Madison Avenue) to Roosevelt Island</a>
      		</section>
 			
-			<section id="location">
+			<section id="visual">
 				<h2>Roosevelt Island Skyline Facing Manhattan!</h2>
 				<p><img src="./Pictures/rooseveltisland.jpg" alt="Natural History Entrance on Central Park West" class="about-pic"></p>
 			</section>

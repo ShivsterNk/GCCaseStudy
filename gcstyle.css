@@ -53,13 +53,13 @@ body, .navbar, footer {
 	height: 3px;
 	margin: 5px 0;
 	transition: all 0.3s ease;
-	background-color: white;
+	background-color: black;
 }
 
 .logo {
 	font-size: clamp(1.2rem, 4vw, 2rem);
 	font-weight: 500;
-	color: white;
+	color: black;
 }
 
 li {
@@ -67,7 +67,7 @@ li {
 	display: inline-block;
 }
 li a {
-	color: white;
+	color: black;
 	font-size: clamp(0.75rem, 1.5vw, 1.25rem);
 	font-weight: bold;
 	margin-right: 20px;
@@ -88,16 +88,16 @@ p {
 
 /* SIDE NAVIGATION */
 .sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1000; /* Stay on top */
-  top: 0; /* Stay at the top */
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1000; 
+  top: 0; 
   left: 0;
-  background-color: #111; /* Black*/
+  background-color: #111; 
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: width 0.5s ease-in-out; /* 0.5 second transition effect to slide in the sidenav */
+  padding-top: 60px; 
+  transition: width 0.5s ease-in-out; 
 }
 
 /* The navigation menu links */
@@ -151,7 +151,7 @@ p {
 }
 
 .menuButton:hover {
-  background-color: #444;  /* Change color when hovered */
+  background-color: #444;  
 }
 
 .menuButton:active {
@@ -284,15 +284,14 @@ p {
 	);
 	transform: skewX(-25deg); /* Angles the shimmer line */
 	
-	/* Loops the shimmer every 4 seconds indefinitely */
 	animation: stationShimmer 7s infinite ease-in-out;
 }
 
 /* Shimmer Animation Loop */
 @keyframes stationShimmer {
 	0% { left: -150%; }
-	20% { left: 150%; } /* Sweeps across the box to the right side */
-	100% { left: 150%; } /* Pauses before restarting the loop */
+	20% { left: 150%; } 
+	100% { left: 150%; } 
 }
 
 
@@ -394,7 +393,7 @@ footer {
 	margin-top: 20px;
 	padding: 10px;
 	background-color: #0073e6;
-	color: white;
+	color: black;
 }
 
 .footerContainer {
@@ -405,25 +404,25 @@ footer {
 	justify-content: right;
 }
 .footerNav ul li a{
-	color: white;
+	color: black;
 	margin: 10px;
 	padding-top: 10px;
 	font-size: 1.25em;
-	opacity: 0.5;
 	transition: 0.5s;
 }
 
 .footerNav ul li a:hover{
 	opacity: 1;
+	color: gainsboro;
 }
 
 .footerBottom{
 	background-image: linear-gradient(to right, #9FE2BF, #3B5F9B, #7A5FA8);
 	text-align: left;
-	color: white;
+	color: black;
 }
 .maker {
-	color: white;
+	color: black;
 	font-family: 'Helvetica';
 	font-weight: bold;
 	margin: 0px 5px;
@@ -473,10 +472,18 @@ a::after {
 }
 
 a:hover {
-    color: #7097C1;
+    color: gainsboro;
 }
 
 a:hover::after {
+    width: 100%;
+}
+
+a.helps:hover {
+    color: gray;
+}
+
+a.helps:hover::after {
     width: 100%;
 }
 
